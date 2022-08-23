@@ -41,6 +41,7 @@ selected_movie_name = st.selectbox(
     movies_list
 )
 
+
 if st.button('Show Recommendation'):
     recommended_movie_names, recommended_movie_posters, movies_overview = recommend(selected_movie_name)
     print(movies_overview)
